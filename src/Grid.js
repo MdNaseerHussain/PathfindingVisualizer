@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import board from "./Board";
 import Node from "./Node";
-// import dijkstra from "./Dijkstra";
-// import BestFirstSearch from "./BestFirstSearch";
+import dijkstra from "./Dijkstra";
+import BestFirstSearch from "./BestFirstSearch";
 import Astar from "./Astar";
 
 const ROW_SIZE = 15;
@@ -134,7 +134,25 @@ export default function Grid() {
           }
           className="visualize"
         >
-          Visualize
+          Visualize A*
+        </button>
+        <button
+          onClick={() =>
+            visualizeBool &&
+            dijkstra(board, markVisited, markExplored, markPath)
+          }
+          className="visualize"
+        >
+          Visualize Dijkstra
+        </button>
+        <button
+          onClick={() =>
+            visualizeBool &&
+            BestFirstSearch(board, markVisited, markExplored, markPath)
+          }
+          className="visualize"
+        >
+          Visualize Greedy Best First Search
         </button>
         <button
           onClick={() => resetBool && resetBoard(board)}
