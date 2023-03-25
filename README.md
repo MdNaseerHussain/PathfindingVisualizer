@@ -2,7 +2,7 @@
 
 This is an application which you can use to visualize shortest path algorithms in a graph. I built this application because I was fascinated by pathfinding algorithms, and I wanted to visualize them in action. You can play around with this application by adding walls in the grid using your mouse and see how different pathfinding algorithms perform.
 
-You can access the website at this link http://pathfinding-visualizer.s3-website.ap-south-1.amazonaws.com/
+You can access the website at this link https://641f85cf8d28a9292adb58aa--stalwart-muffin-2cdf12.netlify.app/
 
 ### Screenshot
 ![Website Screenshot](https://github.com/MdNaseerHussain/PathfindingVisualizer/blob/main/public/pathfinderScreenshot.jpeg)
